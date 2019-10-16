@@ -1,25 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Mouse from './components/mouse'
+import Content from './components/content'
+import FilteredText from './components/filtered_text'
+import TopLevelContent from './components/load_website'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <Mouse />
+    <Content />
+    <FilteredText />
+    <TopLevelContent />
+  </div>
   );
 }
 
